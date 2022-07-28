@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Sincères Salutations</title>
+    <script src="salutations.js" defer></script>
+    <script src="execution.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Identité</legend>
+            <input type="text" name="prenom" id="prenom" placeholder="saisissez votre prénom">
+            <input type="text" name="nom" id="nom" placeholder="saisissez votre nom">
+            <input type="text" name="titre" id="titre" placeholder="saisissez votre titre / surnom">
+            <select name="race" id="race">
+                <option value="human" selected>Humain(e)</option>
+                <option value="elf">Elfe</option>
+                <option value="ork">Orque</option>
+            </select>
+            <input type="radio" name="rank" id="roturier" value="roturier" checked>roture
+            <input type="radio" name="rank" id="noble" value="noble"> noblesse
+            <input type="radio" name="rank" id="royal" value="royal"> Royauté
+        </fieldset>
+        <fieldset>
+            <legend>Classe(s) du personnage</legend>
+
+            <input type="checkbox" name="priest" id="priest" class="classe"> Prêtre
+            <input type="checkbox" name="warrior" id="warrior" class="classe"> Guerrier
+            <input type="checkbox" name="rogue" id="rogue" class="classe"> Voleur
+            <input type="checkbox" name="mage" id="mage" class="classe"> Mage
+
+        </fieldset>
+        <button id="btn_salutation">Dit bonjour</button>
+    </form>
+    <div id="message">
+        <div id="salutations"></div>
+        <div id="emotes"></div>
+        <div id="classes"></div>
+    </div>
+    <div id="error"></div>
+
+
+</body>
+
+</html>
